@@ -80,7 +80,7 @@ class BME280 {
 
               // Config Normal mode to 1000ms
               //
-              this.i2cBus.writeByte(this.i2cAddress, this.REGISTER_CONFIG, 0b01010010, (err) => {
+              this.i2cBus.writeByte(this.i2cAddress, this.REGISTER_CONFIG, 0b10100100, (err) => {
                 if(err) {
                   return reject(err);
                 }
